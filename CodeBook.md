@@ -31,8 +31,8 @@ The data looks like this:
 
 |    | Column Name                       | Description |
 |----|-----------------------------------|-------------|
-| 1  | subject                           | Subject ID  |
-| 2  | activity                          | Type of activity |
+| 1  | subject                           | Subject ID (from 1 to 30) |
+| 2  | activity                          | Type of activity (self-descriptive): walking, walking_upstairs, walking_downstairs, laying, sitting, standing. |
 | 3  | tBodyAccMeanX                 | Average value of time domain signal of body acceleration mean, X-axis |
 | 4  | tBodyAccMeanY                 | Average value of time domain signal of body acceleration mean, Y-axis |
 | 5  | tBodyAccMeanZ                 | Average value of time domain signal of body acceleration mean, Z-axis |
