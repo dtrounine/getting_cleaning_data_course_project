@@ -53,7 +53,6 @@ loadFeatures <- function(rawFile) {
                            header = FALSE, 
                            sep = " ", 
                            col.names = c("offset", "feature"))
-    unlink(con)
     features
 }
 
@@ -68,7 +67,6 @@ loadLabels <- function(rawFile) {
                          header = FALSE, 
                          sep = " ", 
                          col.names = c("value", "label"))
-    unlink(con)
     labels
 }
 
@@ -82,7 +80,6 @@ loadMeasurements <- function(rawFile, subfolder, suffix) {
                                stringsAsFactors = FALSE,
                                header = FALSE,
                                sep = "")
-    unlink(con)
     measurements
 }
 
@@ -93,7 +90,7 @@ loadSubjects <- function(rawFile, subfolder, suffix) {
     con <- unz(description = rawFile,
                filename = paste("UCI HAR Dataset/", subfolder, "/subject", suffix, ".txt", sep = ""))
     subjects <- readLines(con)
-    unlink(con)
+    close(con)
     subjects
 }
 
@@ -104,7 +101,7 @@ loadActivities <- function(rawFile, subfolder, suffix) {
     con <- unz(description = rawFile,
                filename = paste("UCI HAR Dataset/", subfolder, "/y", suffix, ".txt", sep = ""))
     activities <- readLines(con)
-    unlink(con)
+    close(con)
     activities
 }
 
