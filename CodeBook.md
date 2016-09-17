@@ -1,7 +1,7 @@
 Code Book
 ===================
 
-The data set contains 180 rows, each row containing avearage values of measurements for each subject and activity. 
+The data set contains 180 rows, each row containing avearage values of measurements for each subject and activity. These average values are normalized and bounded within [-1, 1].
 
 ## Columns
 
