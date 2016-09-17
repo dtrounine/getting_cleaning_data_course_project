@@ -1,2 +1,3 @@
-# getting_cleaning_data_course_project
-Getting and Cleaning Data Course Project
+# Human Activity Recognition Using Smartphones Data Set 
+
+This repo contains R script for processing the data set originally published [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). 
